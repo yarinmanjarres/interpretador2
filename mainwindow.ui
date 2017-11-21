@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>916</width>
+    <height>454</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>160</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTextEdit" name="textEdit_2"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>290</y>
+      <width>751</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QTextEdit" name="textEdit"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>0</y>
+      <width>611</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Tab 1</string>
+        </attribute>
+        <widget class="QPlainTextEdit" name="plainTextEdit">
+         <property name="geometry">
+          <rect>
+           <x>-7</x>
+           <y>-1</y>
+           <width>761</width>
+           <height>271</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Tab 2</string>
+        </attribute>
+        <widget class="QPlainTextEdit" name="plainTextEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>-7</x>
+           <y>-1</y>
+           <width>761</width>
+           <height>261</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>-1</y>
+      <width>141</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QTextEdit" name="textEdit_3"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>916</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionNuevo_Archivo"/>
+    <addaction name="actionAbrir_Archivo"/>
+    <addaction name="separator"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionGuardar_Como"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFuente">
+    <property name="title">
+     <string>Fuente</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuNavegacion">
+    <property name="title">
+     <string>Navegacion</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuProyecto">
+    <property name="title">
+     <string>Proyecto</string>
+    </property>
+    <addaction name="actionNueva_clae"/>
+    <addaction name="actionNuevo_paquete"/>
+   </widget>
+   <widget class="QMenu" name="menuCorrer">
+    <property name="title">
+     <string>Correr</string>
+    </property>
+    <addaction name="actionCorrer"/>
+    <addaction name="actionCorer_pausado"/>
+   </widget>
+   <widget class="QMenu" name="menuVentana">
+    <property name="title">
+     <string>Ventana</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionArriba"/>
+    <addaction name="actionAbajo"/>
+    <addaction name="actionTodo_izquirda"/>
+    <addaction name="actionIzquierda"/>
+    <addaction name="actionDerecha"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuEditar"/>
+   <addaction name="menuFuente"/>
+   <addaction name="menuNavegacion"/>
+   <addaction name="menuProyecto"/>
+   <addaction name="menuCorrer"/>
+   <addaction name="menuVentana"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAbrir_Archivo"/>
+   <addaction name="actionGuardar_Como"/>
+   <addaction name="separator"/>
+   <addaction name="actionCorrer"/>
+   <addaction name="actionCorer_pausado"/>
+   <addaction name="separator"/>
+   <addaction name="actionNuevo_paquete"/>
+   <addaction name="actionNueva_clae"/>
+   <addaction name="separator"/>
+   <addaction name="actionAbajo"/>
+   <addaction name="actionArriba"/>
+   <addaction name="actionTodo_izquirda"/>
+   <addaction name="actionIzquierda"/>
+   <addaction name="actionDerecha"/>
+  </widget>
+  <action name="actionAbrir_Archivo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Iconos/prj_obj.gif</normaloff>../Iconos/prj_obj.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir Archivo</string>
+   </property>
+  </action>
+  <action name="actionNuevo_Archivo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Iconos/new_wiz.gif</normaloff>../Iconos/new_wiz.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Nuevo Archivo</string>
+   </property>
+  </action>
+  <action name="actionGuardar_Como">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Iconos/saveall_edit.gif</normaloff>../Iconos/saveall_edit.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar Como</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Iconos/save_edit.gif</normaloff>../Iconos/save_edit.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+  </action>
+  <action name="actionCorrer">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Iconos/run_wiz.png</normaloff>../Iconos/run_wiz.png</iconset>
+   </property>
+   <property name="text">
+    <string>correr</string>
+   </property>
+  </action>
+  <action name="actionCorer_pausado">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Iconos/debug_exc.gif</normaloff>../Iconos/debug_exc.gif</iconset>
+   </property>
+   <property name="text">
+    <string>corer pausado</string>
+   </property>
+  </action>
+  <action name="actionNueva_clae">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Iconos/newclass_wiz.png</normaloff>../Iconos/newclass_wiz.png</iconset>
+   </property>
+   <property name="text">
+    <string>nueva clae</string>
+   </property>
+  </action>
+  <action name="actionNuevo_paquete">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Iconos/newpack_wiz.png</normaloff>../Iconos/newpack_wiz.png</iconset>
+   </property>
+   <property name="text">
+    <string>nuevo paquete</string>
+   </property>
+  </action>
+  <action name="actionArriba">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Iconos/prev_nav.gif</normaloff>../Iconos/prev_nav.gif</iconset>
+   </property>
+   <property name="text">
+    <string>arriba</string>
+   </property>
+  </action>
+  <action name="actionAbajo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Iconos/next_nav.gif</normaloff>../Iconos/next_nav.gif</iconset>
+   </property>
+   <property name="text">
+    <string>abajo</string>
+   </property>
+  </action>
+  <action name="actionIzquierda">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Iconos/nav_backward.gif</normaloff>../Iconos/nav_backward.gif</iconset>
+   </property>
+   <property name="text">
+    <string>izquierda</string>
+   </property>
+  </action>
+  <action name="actionDerecha">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Iconos/nav_forward.gif</normaloff>../Iconos/nav_forward.gif</iconset>
+   </property>
+   <property name="text">
+    <string>derecha</string>
+   </property>
+  </action>
+  <action name="actionTodo_izquirda">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Iconos/last_edit_pos.gif</normaloff>../Iconos/last_edit_pos.gif</iconset>
+   </property>
+   <property name="text">
+    <string>todo izquirda</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
